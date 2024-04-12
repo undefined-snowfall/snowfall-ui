@@ -1,0 +1,15 @@
+.accordion-child {
+  &.disable {
+    opacity: .7;
+  }
+  .accordion-contents-container {
+    overflow: hidden;
+    max-height: var(--contents-height);
+    transition: max-height 0.3s;
+  }
+  &:not(.accordion-state-open), &:not(.usf-accordion-lib) {
+    .accordion-contents-container {
+      max-height: 0px;
+    }
+  }
+}
