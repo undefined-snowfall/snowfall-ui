@@ -1,5 +1,5 @@
 {
-  "name": "snowfall-accordion",
+  "name": "snowfall-ui",
   "private": true,
   "scripts": {
     "lint": "prettier --write .",

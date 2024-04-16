@@ -1,5 +1,5 @@
 {
-  "name": "snowfall-ui",
+  "name": "@snowfall-ui/core",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
