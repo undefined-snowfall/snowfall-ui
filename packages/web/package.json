@@ -16,7 +16,7 @@
     "url": "https://github.com/undefined-snowfall/snowfall-ui.git",
     "directory": "packages/web",
     "type": "git"
-  }
+  },
   "peerDependencies": {
     "typescript": "^5.0.0"
   }
