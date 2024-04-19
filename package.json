@@ -1,20 +1,26 @@
 {
   "name": "snowfall-ui",
   "private": true,
+  "type": "module",
   "scripts": {
-    "lint": "prettier --write .",
-    "publish": "lerna"
+    "fmt": "prettier --write .",
+    "lint": "eslint ."
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
+    "@eslint/js": "^9.0.0",
     "@types/bun": "latest",
     "commitizen": "^4.3.0",
-    "eslint": "^9.0.0",
-    "eslint-config-recommended": "^4.1.0",
+    "eslint": "^8.0.0",
     "lerna": "^8.1.2",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "repository": {
+    "url": "https://github.com/undefined-snowfall/snowfall-ui.git",
+    "type": "git"
   },
   "packageManager": "bun@1.1.2"
 }
