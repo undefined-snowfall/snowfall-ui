@@ -1,0 +1,23 @@
+{
+  "name": "@snowfall-ui/web",
+  "type": "module",
+  "scripts": {
+    "build": "bun build lib/index.js",
+    "build:prod": "NODE_ENV=production bun build lib/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "globals": "^15.0.0"
+  },
+  "dependencies": {
+    "@snowfall-ui/core": "workspace:^"
+  },
+  "repository": {
+    "url": "https://github.com/undefined-snowfall/snowfall-ui.git",
+    "directory": "packages/web",
+    "type": "git"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
