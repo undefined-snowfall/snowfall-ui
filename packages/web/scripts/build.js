@@ -1,9 +1,10 @@
+import { sassPlugin } from "@snowfall-ui/bun-plugin-styles"
+
 const result = await Bun.build({
   minify: Bun.env.NODE_ENV === 'production',
-  entrypoints: ['lib/index.js'],
-  outdir: 'dist'
+  entrypoints: ['lib/index.js', "components/accordion.js"],
+  outdir: 'dist',
+  plugins: [sassPlugin({ web: true })]
 })
 
-for (const log of result.logs) {
-  console.log(log)
-}
+console.log(...result.logs)

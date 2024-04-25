@@ -1,8 +1,11 @@
 {
   "name": "@snowfall-ui/core",
-  "module": "index.ts",
   "type": "module",
+  "exports": {
+    "./*": "./components/*"
+  },
   "devDependencies": {
+    "@snowfall-ui/bun-plugin-styles": "workspace:^",
     "@types/bun": "latest"
   },
   "peerDependencies": {
